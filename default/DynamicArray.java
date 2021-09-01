@@ -31,6 +31,11 @@ public class DynamicArray<T> implements Iterable<T> {
         arr[index] = elem;
     }
 
+    public void clear() {
+        for (int i = 0; i < len; i++) arr[i] = null;
+        len = 0;
+    }
+
     public void add(T elem){
         if(length + 1 >= capacity){
             if(capacity == 0) capacity = 1;
