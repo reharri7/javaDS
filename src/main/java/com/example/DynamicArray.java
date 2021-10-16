@@ -1,3 +1,5 @@
+package com.example;
+
 @SuppressWarnings("unchecked")
 public class DynamicArray<T> implements Iterable<T> {
     private T[] arr;
@@ -32,8 +34,8 @@ public class DynamicArray<T> implements Iterable<T> {
     }
 
     public void clear() {
-        for (int i = 0; i < len; i++) arr[i] = null;
-        len = 0;
+        for (int i = 0; i < length; i++) arr[i] = null;
+        length = 0;
     }
 
     public void add(T elem){
